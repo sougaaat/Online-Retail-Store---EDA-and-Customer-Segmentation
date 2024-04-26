@@ -1,4 +1,4 @@
-# EDA Customer Segmentation for Online Retail Store
+# EDA & Customer Segmentation for Online Retail Store
 
 This project focuses on **Exploratory Data Analysis (EDA)** and **Customer Segmentation** for an online retail store. We'll dive into the dataset, understand its structure, and uncover insights about customer behavior.
 
