@@ -1,53 +1,62 @@
-# Online Retail Store EDA
+# EDA Customer Segmentation for Online Retail Store
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Project Overview](#project-overview)
-3. [Dataset Description](#dataset-description)
-4. [Data Cleaning & Preparation](#data-cleaning--preparation)
-5. [Univariate & Multivariate Analysis](#univariate--multivariate-analysis)
-6. [Cohort Analysis on Customer Retention](#cohort-analysis-on-customer-retention)
-7. [Summary & Recommendations](#summary--recommendations)
-8. [Usage](#usage)
-9. [Dependencies](#dependencies)
-10. [Contributing](#contributing)
-11. [License](#license)
-
-## Introduction
-This project involves Exploratory Data Analysis (EDA) on a dataset from an Online Retail Store. The analysis includes data cleaning, univariate and multivariate analysis, cohort analysis on customer retention, and provides insights and recommendations for business improvement.
+This project focuses on **Exploratory Data Analysis (EDA)** and **Customer Segmentation** for an online retail store. We'll dive into the dataset, understand its structure, and uncover insights about customer behavior.
 
 ## Project Overview
-The primary goal of this project is to gain actionable insights into the performance of the online retail store. By analyzing various aspects such as product sales, revenue, time-based patterns, geographical insights, and customer behavior, the project aims to provide a comprehensive understanding of the business and suggest recommendations for optimization.
 
-## Dataset Description
-The dataset contains the following columns:
+### Dataset
+- The dataset we're working with is called `online_retail.csv`.
+- It contains transactional data from an online retail store.
+- The dataset comprises **541,909 entries** and **8 columns**.
 
-- `InvoiceNo`: Invoice number of the transaction
-- `StockCode`: Unique code of the product
-- `Description`: Description of the product
-- `Quantity`: Quantity of the product in the transaction
-- `InvoiceDate`: Date and time of the transaction
-- `UnitPrice`: Unit price of the product
-- `CustomerID`: Unique identifier of the customer
-- `Country`: Country where the transaction occurred
+### Goals
+1. **Data Exploration**: We'll start by loading the dataset into a pandas DataFrame. We'll create a copy of the original data to maintain data integrity.
+2. **Initial Exploration**: We'll explore the dataset to understand its basic characteristics.
+3. **Data Preprocessing**: We'll handle missing values and outliers.
+4. **Exploratory Data Analysis (EDA)**: This step involves digging deeper into the data. We'll:
+   - Visualize patterns and trends.
+   - Identify key features.
+   - Uncover relationships between variables.
+5. **Customer Segmentation**: We'll group customers based on their purchasing behavior. This segmentation can help tailor marketing strategies and improve customer satisfaction.
 
-## Data Cleaning & Preparation
-The cleaning process involves handling null values, duplicates, and changing the data type of CustomerID. The dataset is then prepared for analysis.
+## Key Steps
 
-## Univariate & Multivariate Analysis
-Detailed analysis is performed on various aspects, including invoice numbers, products, quantity, invoice date, country, and customer ID. Insights are drawn from each analysis, leading to a comprehensive understanding of the business.
+### 1. Loading the Dataset
+- We'll read the `online_retail.csv` file into a pandas DataFrame.
+- Ensuring data integrity is crucial, so we'll work with a copy of the original dataset.
 
-## Cohort Analysis on Customer Retention
-Cohort analysis is conducted to analyze customer retention over time, providing valuable insights into customer behavior and business performance.
+### 2. Data Exploration
+- We'll examine the first few rows of the dataset.
+- Check for missing values and data types.
+- Calculate summary statistics.
 
-## Summary & Recommendations
-A summary is provided, encompassing data overview, cleaning details, product analysis, sales and revenue insights, time-based patterns, geographical insights, and customer analysis. Recommendations are given for data management, sales optimization, customer engagement, time-based marketing, demographic expansion, seasonal planning, and customer retention.
+### 3. Data Preprocessing
+- Handle missing values (if any).
+- Address outliers (if present).
 
-## Usage
-To replicate the analysis, clone the repository and run the Jupyter Notebook. Ensure the required dependencies are installed.
+### 4. Exploratory Data Analysis (EDA)
+- Visualize:
+  - Distribution of purchase amounts.
+  - Seasonal trends.
+  - Customer demographics.
+- Identify:
+  - High-value customers.
+  - Popular products.
+  - Correlations between variables.
 
-## Dependencies
-- List of dependencies and versions used in the project.
+### 5. Customer Segmentation
+- Using clustering techniques (e.g., K-means), we'll group customers based on their behavior.
+- Segments may include:
+  - Bulk buyers.
+  - Frequent buyers.
+  - Occasional shoppers.
+  - High-spenders.
+  - Not-so-active buyers.
+
+## Results and Interpretation
+
+- We'll present our findings through visualizations and concise summaries.
+- Insights gained from EDA and customer segmentation will guide business decisions.
 
 ## Contributing
 Feel free to contribute by opening issues or submitting pull requests. Contributions are welcome!
