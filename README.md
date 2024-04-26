@@ -5,7 +5,7 @@ This project focuses on **Exploratory Data Analysis (EDA)** and **Customer Segme
 ## Project Overview
 
 ### Dataset
-- The dataset we're working with is called `online_retail.csv`.
+- The dataset we're working with is called <a hred = "https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset"> online_retail.csv </a>
 - It contains transactional data from an online retail store.
 - The dataset comprises **541,909 entries** and **8 columns**.
 
